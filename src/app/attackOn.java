@@ -24,7 +24,7 @@ public class attackOn {
             String attack = scn1.nextLine();
             if(attack.equalsIgnoreCase("Атакуем")) {
                 attackOn.heath = attackOn.heath - player.getWeapon().getDamage();
-                System.out.println("Вы нанесли противнику " + player.getWeapon().getDamage() + " урона. В общем у него осталось" + attackOn.heath + " здоровья.");
+                System.out.println("Вы нанесли противнику " + player.getWeapon().getDamage() + " урона. В общем у него осталось " + attackOn.heath + " здоровья.");
                 if(attackOn.getHeath() <= 0) {
                     win = "true";
                 }

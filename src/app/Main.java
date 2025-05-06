@@ -16,7 +16,7 @@ public class Main {
                         "Хотите её посетить? Возможно там будет что-то что поможет выжить, а может и нет.");
                 String wantAttend = scn.nextLine();
                 if(wantAttend.equalsIgnoreCase("Да")) {
-                    System.out.println("Вы увидели что на мусорке нахожится злая собака возле каких-то вещей. \n" +
+                    System.out.println("Вы увидели что на мусорке находится злая собака возле каких-то вещей. \n" +
                             "Хотите попытаться атаковать чтоб осмотртеь лут?");
                     String wantAttack = scn.nextLine();
                     if(wantAttend.equalsIgnoreCase("Да")) {
