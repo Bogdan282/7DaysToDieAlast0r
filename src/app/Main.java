@@ -24,6 +24,8 @@ public class Main {
                         attackOn dog = new attackOn("Собака", 5, 30);
                         if(dog.startAttack(dog, player)){
                             System.out.println("Вы пережили день и идёте спать в ожидании следующего дня.");
+                        } else {
+                            System.out.println("Вы проиграли.");
                         }
                     } else if(wantAttend.equalsIgnoreCase("Нет")) {
                         day1Sceep(player);
@@ -34,6 +36,11 @@ public class Main {
             }
         };
         day1.eventStart();
+        if(player.getHealth() > 0) {
+            // day2
+        } else {
+            System.out.println("Вы проиграли.");
+        }
         };
     public static void day1Sceep(Entity player) {
         System.out.println("Вы простояли весь день и остались голодными и потеряли 20 очков здоровья.");
